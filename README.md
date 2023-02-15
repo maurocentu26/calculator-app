@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [View GitHub repo](https://github.com/maurocentu26/calculator-app)
+- Live Site URL: [View vercel deploy](https://calculator-app-three-gray.vercel.app/)
 
 ## My process
 
