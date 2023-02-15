@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/styles.css">
+   <title>Frontend Mentor | Calculator app</title>
+</head>
+<body>
+   <div class="black-filter noshow"></div>
+   <main class="main">
+      <section class="main__calculator theme-1">
+         <div class="calculator__container">
+            <div class="calculator__top">
+               <h1 class="calculator__title">calc</h1>
+               <div class="calculator__theme">
+                  <span class="theme__text">THEME</span>
+                  <div class="theme__selector">
+                     <div class="theme__numbers">
+                        <span class="theme__number-item">1</span>
+                        <span class="theme__number-item">2</span>
+                        <span class="theme__number-item">3</span>
+                     </div>
+                     <div class="theme__switch"></div>
+                  </div>
+               </div>
+            </div>
+            <input type="text" class="calculator__input">
+            <div class="calculator__buttons">
+               <button class="calculator__buttons-item op">7</button>
+               <button class="calculator__buttons-item op">8</button>
+               <button class="calculator__buttons-item op">9</button>
+               <button class="calculator__buttons-item" id="del">DEL</button>
+               <button class="calculator__buttons-item op">4</button>
+               <button class="calculator__buttons-item op">5</button>
+               <button class="calculator__buttons-item op">6</button>
+               <button class="calculator__buttons-item op">+</button>
+               <button class="calculator__buttons-item op">1</button>
+               <button class="calculator__buttons-item op">2</button>
+               <button class="calculator__buttons-item op">3</button>
+               <button class="calculator__buttons-item op">-</button>
+               <button class="calculator__buttons-item op">.</button>
+               <button class="calculator__buttons-item op">0</button>
+               <button class="calculator__buttons-item op">/</button>
+               <button class="calculator__buttons-item op">*</button>
+               <button class="calculator__buttons-item big-button" id="reset">RESET</button>
+               <button class="calculator__buttons-item big-button" id="equal">=</button>
+            </div>
+         </div>
+      </section>
+   </main>
+   <button class="show-footer">i</button>
+   <footer class="footer noshow">
+      <div class="footer__text">
+         <p class="footer__paragraph">Developed by <a href="https://github.com/maurocentu26" target="_blank">Mauro Centurión</a>.</p>
+         <p class="footer__paragraph">Challenge by <a href="https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29/hub" target="_blank
+            ">Frontend Mentor</a>.</p>
+      </div>
+         <a href="https://github.com/maurocentu26/calculator-app" target="_blank">
+            <svg width="40px" height="40px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+               <rect width="24" height="24" fill="none"/>
+               <path d="M12,2A10,10,0,0,0,8.84,21.5c.5.08.66-.23.66-.5V19.31C6.73,19.91,6.14,18,6.14,18A2.69,2.69,0,0,0,5,16.5c-.91-.62.07-.6.07-.6a2.1,2.1,0,0,1,1.53,1,2.15,2.15,0,0,0,2.91.83,2.16,2.16,0,0,1,.63-1.34C8,16.17,5.62,15.31,5.62,11.5a3.87,3.87,0,0,1,1-2.71,3.58,3.58,0,0,1,.1-2.64s.84-.27,2.75,1a9.63,9.63,0,0,1,5,0c1.91-1.29,2.75-1,2.75-1a3.58,3.58,0,0,1,.1,2.64,3.87,3.87,0,0,1,1,2.71c0,3.82-2.34,4.66-4.57,4.91a2.39,2.39,0,0,1,.69,1.85V21c0,.27.16.59.67.5A10,10,0,0,0,12,2Z"/>
+            </svg>
+         </a>
+   </footer>
+   <script src="js/app.js"></script>
+</body>
+</html>
