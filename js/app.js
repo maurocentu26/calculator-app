@@ -34,8 +34,10 @@ document.addEventListener("DOMContentLoaded", () => {
       let input = calculatorDisplay.value;
 
       if (result){
-         input = "";
-         result = false;
+         if (!isNaN(button.textContent)) {
+            input = "";
+            result = false;
+         } else result = false;
       }
 
       if (button.classList.contains("op")) {
