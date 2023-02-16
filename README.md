@@ -56,5 +56,5 @@ As I continue to learn JavaScript I would like to redo this, and other, projects
 
 ## Author
 
-- Website - [Add your name here](https://github.com/maurocentu26)
+- Website - [Mauro Centurión](https://github.com/maurocentu26/)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/maurocentu26)
