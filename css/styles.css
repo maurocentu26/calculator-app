@@ -24,10 +24,13 @@ button:hover{
    --tg-kb-bg: hsl(223, 31%, 20%);
    --screen-bg: hsl(224, 36%, 15%);
    --key-rst-bg: hsl(225, 21%, 49%);
+   --key-rst-bg-hv: hsl(225, 60%, 74%);
    --key-rst-shw: hsl(224, 28%, 35%);
    --key-op-bg: hsl(30, 25%, 89%);
+   --key-op-bg-hv: hsl(45, 100%, 99%);
    --key-op-shw: hsl(28, 16%, 65%);
    --key-eq-bg: hsl(6, 63%, 50%);
+   --key-eq-bg-hv: hsl(6, 100%, 72%);
    --key-eq-shw: hsl(6, 70%, 34%);
    --txt-color: hsl(0, 0% ,100%);
    --button-txt-color: hsl(221, 14%, 31%);
@@ -37,10 +40,13 @@ button:hover{
    --tg-kb-bg: hsl(0, 5%, 81%);
    --screen-bg: hsl(0, 0%, 93%);
    --key-rst-bg: hsl(185, 42%, 37%);
+   --key-rst-bg-hv: hsl(185, 53%, 56%);
    --key-rst-shw: hsl(185, 58%, 25%);
    --key-op-bg: hsl(45, 7%, 89%);
+   --key-op-bg-hv: hsl(0, 0%, 100%);
    --key-op-shw: hsl(35, 11%, 61%);
    --key-eq-bg: hsl(25, 98%, 40%);
+   --key-eq-bg-hv: hsl(25, 79%, 62%);
    --key-eq-shw: hsl(25, 99%, 27%);
    --txt-color: hsl(0, 0% ,100);
    --button-txt-color: hsl(60, 10%, 19%);
@@ -50,10 +56,13 @@ button:hover{
    --tg-kb-bg: hsl(268, 71%, 12%);
    --screen-bg: hsl(268, 71%, 12%);
    --key-rst-bg: hsl(281, 89%, 26%);
+   --key-rst-bg-hv: hsl(281, 84%, 39%);
    --key-rst-shw: hsl(285, 91%, 52%);
    --key-op-bg: hsl(268, 47%, 21%);
+   --key-op-bg-hv: hsl(268, 49%, 42%);
    --key-op-shw: hsl(290, 70%, 36%);
    --key-eq-bg: hsl(176, 100%, 44%);
+   --key-eq-bg-hv: hsl(176, 87%, 73%);
    --key-eq-shw: hsl(177, 92%, 70%);
    --txt-color: hsl(52, 100%, 62%);
    --button-txt-color: hsl(52, 100%, 62%);
@@ -145,6 +154,7 @@ button:hover{
    gap: 1rem;
 }
 .calculator__buttons-item{
+   transition: background .3s ease;
    font-size: 1.2rem;
    color: var(--button-txt-color);
    background: var(--key-op-bg);
@@ -156,17 +166,32 @@ button:hover{
    font-size: 2rem;
 }
 .calculator__buttons-item:hover{
-   
+   background: var(--key-op-bg-hv);
+}
+.calculator__buttons-item:active{
+   box-shadow: inset 0 4px var(--key-op-shw);
 }
 #reset, #del{
    color: #fff;
    background: var(--key-rst-bg);
    box-shadow: inset 0 -4px var(--key-rst-shw);
 }
+#reset:hover, #del:hover{
+   background: var(--key-rst-bg-hv);
+}
+#reset:active, #del:active{
+   box-shadow: inset 0 4px var(--key-rst-shw);
+}
 #equal{
    color: var(--key-eq-color, #fff);
    background: var(--key-eq-bg);
    box-shadow: inset 0 -4px var(--key-eq-shw);
+}
+#equal:hover{
+   background: var(--key-eq-bg-hv);
+}
+#equal:active{
+   box-shadow: inset 0 4px var(--key-eq-shw);
 }
 
 .big-button{ 
